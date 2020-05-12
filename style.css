@@ -12,8 +12,12 @@ h2 {
   padding: 0rem 1rem;
 }
 
+h5 {
+  font-size: 1.4rem; 
+}
+
 h6 {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 p {
