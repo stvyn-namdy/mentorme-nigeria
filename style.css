@@ -12,6 +12,12 @@ h2 {
   padding: 0rem 1rem;
 }
 
+h3 {
+  color: #008cff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 h5 {
   font-size: 1.4rem; 
 }
@@ -23,19 +29,80 @@ h6 {
 p {
   line-height: 2rem;
   padding-left: 1rem;
+  font-size: 1rem;
+}
+
+
+/*************************************************
+=================NAVBAR===========================
+*************************************************/
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .navbar {
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 .navbar-na li {
-  padding-right: 1.6rem;
+  padding-right: 1.5rem;
 }
 
-.nav-link {
-  font-size: 1.1em !important;
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 2.5rem;
+  padding-top: 1.4rem;
+  position: relative;
+}
+
+.navbar-nav a {
+   color: black;
+   text-decoration: none;
+   font-size: 1.1rem;
+}
+
+.navbar-nav a:hover {
+  color: #0062FF;
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 0.6em 1.3em;
+  border-radius: .7em;
+  background: #0062FF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;    
+} */
+
+.navbar-nav a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #0062FF;
+
+  position: absolute;
+  top: 40%;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+
+.navbar-nav a:hover::before {
+  width: 100%;
+}
+
+/* NAVLINK END */
+
 
 /* Change this setting */
 .carousel-inner img {
@@ -74,17 +141,17 @@ p {
 }
 
 .jumbotron {
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 0;
 }
 
 .padding {
-  padding-top: 1.3rem;
-  padding-bottom: 1.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 .welcome {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -92,7 +159,7 @@ p {
   border-top: 2px solid #d8d8d8;
   width: 95%;
   margin-top: .2rem;
-  margin-bottom: .5rem;
+  margin-bottom: .2rem;
 }
 
 .my-4 {
@@ -100,21 +167,8 @@ p {
   margin-top: .2rem;
 }
 
-.fa-code {
-  color: #870826;
-}
-
-.fa-assistive-listening-systems {
-  color: #cc1039;
-}
-
-.fa-user-plus {
-  color: #055378;
-}
-
-.fa-code, .fa-assistive-listening-systems, .fa-user-plus {
-  font-size: 3rem; 
-  margin: 1rem;
+.img-fluid {
+  float: right;
 }
 
 section#goals {
@@ -124,6 +178,27 @@ section#goals {
   background-position:center;
 }
 
+
+/*****************************************
+================ABOUT US==================
+******************************************/
+body#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutus h2 {
+  margin-bottom: 25;
+}
+
+
+
+
+/*******************************************
+================TEAM PAGE==================
+*******************************************/
 .team-member {
   margin-bottom: 50px;
   text-align: center;
@@ -308,6 +383,16 @@ hr.light-100 {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /*---Firefox Bug Fix --*/
